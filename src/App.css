@@ -36,3 +36,136 @@
     transform: rotate(360deg);
   }
 }
+.container {
+  text-align: center;
+  margin: 20px;
+}
+fieldset
+{
+  border: 3px solid #007bff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  
+}
+legend
+{
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  animation: legend-spin infinite 10s;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  display: block;
+  color: red;
+  font-size: 20px;
+  
+}
+
+input {
+  width: 200px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+
+@keyframes legend-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fade-in {
+
+  0% {
+    font-weight: bolder;
+    color: red;
+  }
+  50% {
+    font-weight: bold;
+    color: aqua;  
+  }
+  100% {
+    font-weight: bolder;
+    color: red;
+  }
+}
+@keyframes border {
+  0% {
+    
+    border:red groove ;
+  }
+  50% {
+   
+   border: yellow groove ;
+  }
+  100% {
+    border:red groove ;
+  }
+}
+@keyframes hvr-buzz {
+  50% {
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+.hvr-buzz {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  width: 200px;
+  padding: 5px 10px;
+  background-color: yellowgreen;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.hvr-buzz:disabled {
+    background-color: red; 
+}
+.hvr-buzz:hover, .hvr-buzz:focus, .hvr-buzz:active {
+  animation-name: hvr-buzz;
+  animation-duration: 0.15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+h4
+{
+  animation: ani1 3s infinite;
+}
+@keyframes ani1 {
+  0% {
+    color: red;
+    font-weight: bolder;
+  }
+  50% {
+    color: aqua;
+    font-weight: bold;
+  }
+  100% {
+    color: red;
+    font-weight: bolder;
+  }
+}
